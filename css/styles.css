@@ -1,60 +1,63 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0; /* espaçamento externo da página */
-    padding: 0; /* espaçamento interno da página */
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
-    text-align: center; /* texto centralizado */
+    text-align: center;
 }
-header {
-    background-color: #28a745;
-    color: white;
-    /* 15px (espaçamento interno acima e abaixo) e 0px (direita e esquerda)*/
-    padding: 15px 0px;
-    font-size: 24px; 
+header{
+    background: orange;
+    color: black;
+    /* espaçamento interno 15px acim e abaixo, e 0px esquerda e direta*/
+    padding: 15px 0; 
+    font-size: 24px;
 }
+
 nav {
-    background: #007bff;
-    padding: 10px; /* espaçamento interno do menu */
+    background-color: #007bff;
+    padding: 10px;
     display: flex; /* Flex Boxing */
-    justify-content: space-between; /* espaço entre os elementos do menu*/
-    align-items: center; /* alinhamento na vertical */
+    /* alinhamento na horizontal - espaço entre os links */
+    justify-content: space-between;
+    /* alinhamento na vertical */
+    align-items: center;
 }
-#links-menu{
+#links-menu {
     display: flex;
-    gap: 20px; /* distância entre os itens do menu*/
+    gap: 15px;
 }
-nav a { /* configura os links do menu */
-    color: white;
-    text-decoration: none; /* não decora os links */
-    padding: 10px 15px; /* (10px acima e abaixo) (15px é esquerda e direita)*/
-    font-size: 18px;
-    background: #0056b3;
-    border-radius: 5px; /* cantos arredondados */
+/* configura o estilo das âncoras que estão dentro do nav */
+nav a {
+    color: white; /* texto branco */
+    text-decoration: none; /* não faz decoração no link */
+    padding: 10px 15px; /* 10px é acima e abaixo 15px é esq e dir */
+    font-size: 18px; /* 18px de tamanho da fonte */
+    background: #005663; /* cor de fundo */
+    border-radius: 5px; /* borda com canto arredondado */
+}
+nav a:hover {
+    background: #003d82;
 }
 
 img {
-    width: 120px;
+    width: 100px;
     height: auto;
-    margin-right: 80px; /* espaçamento externo à direita */
+    margin-right: 5px; /* espaçamento externo à direita de 20px */
     border-radius: 10px;
 }
 
-.container {
-    width: 80%; /* largura de 80% da largura da página */
+.container{
+    width: 80%;
+    /* 20px em cima e em baixo e automática èsquerda e direto*/
+    margin: 20px auto; 
     background: white;
+    /* espaçamento interno é nos 4 lados */
+    padding: 20px;
     border-radius: 10px;
-    /* espaçamento externo 20px acima e abaixo */
-    /* espaçamento externo auto à direita e à esquerda */
-    margin: 20px auto;
-    padding: 20px; /* espaçamento interno */ 
     text-align: justify;
 }
 h2 {
     text-align: center;
-}
-
-ol li {
-    padding-bottom: 10px;
 }
 
 table tr td {
@@ -62,17 +65,22 @@ table tr td {
 }
 
 table {
-    margin: 0 auto; /* centraliza a tabela na página */
+    /* esp. externo de 0 acima e abaixo e automático esq. dir. */
+    margin: 0 auto; 
 }
 
 .laranja {
     background-color: orange;
 }
+.azul {
+    background-color: blue;
+    color: white;
+}
 .preta {
     background-color: black;
     color: white;
 }
-.roxa {
+.roxo {
     background-color: purple;
 }
 .verde {
@@ -81,11 +89,6 @@ table {
 .vermelha {
     background-color: red;
 }
-.azul {
-    background-color: navy;
-    color: white;
-}
-
 .campos {
-    margin-bottom: 20px;
+    margin: 20px;
 }
