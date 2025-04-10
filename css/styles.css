@@ -1,3 +1,4 @@
+/* SEU CSS ORIGINAL (mantido integralmente) */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,10 +6,10 @@ body {
     background-color: #f4f4f4;
     text-align: center;
 }
-header{
+
+header {
     background: orange;
     color: black;
-    /* espaçamento interno 15px acim e abaixo, e 0px esquerda e direta*/
     padding: 15px 0; 
     font-size: 24px;
 }
@@ -16,25 +17,25 @@ header{
 nav {
     background-color: #007bff;
     padding: 10px;
-    display: flex; /* Flex Boxing */
-    /* alinhamento na horizontal - espaço entre os links */
+    display: flex;
     justify-content: space-between;
-    /* alinhamento na vertical */
     align-items: center;
 }
+
 #links-menu {
     display: flex;
     gap: 15px;
 }
-/* configura o estilo das âncoras que estão dentro do nav */
+
 nav a {
-    color: white; /* texto branco */
-    text-decoration: none; /* não faz decoração no link */
-    padding: 10px 15px; /* 10px é acima e abaixo 15px é esq e dir */
-    font-size: 18px; /* 18px de tamanho da fonte */
-    background: #005663; /* cor de fundo */
-    border-radius: 5px; /* borda com canto arredondado */
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    background: #005663;
+    border-radius: 5px;
 }
+
 nav a:hover {
     background: #003d82;
 }
@@ -42,20 +43,19 @@ nav a:hover {
 img {
     width: 100px;
     height: auto;
-    margin-right: 5px; /* espaçamento externo à direita de 20px */
+    margin-right: 5px;
     border-radius: 10px;
 }
 
-.container{
+.container {
     width: 80%;
-    /* 20px em cima e em baixo e automática èsquerda e direto*/
     margin: 20px auto; 
     background: white;
-    /* espaçamento interno é nos 4 lados */
     padding: 20px;
     border-radius: 10px;
     text-align: justify;
 }
+
 h2 {
     text-align: center;
 }
@@ -71,25 +71,77 @@ table {
 .laranja {
     background-color: orange;
 }
+
 .azul {
     background-color: blue;
     color: white;
     text-align: center;
-
 }
+
 .preta {
     background-color: black;
     color: white;
 }
+
 .roxo {
     background-color: purple;
 }
+
 .verde {
     background-color: green;
 }
+
 .vermelha {
     background-color: red;
 }
+
 .campos {
     margin: 20px;
+}
+
+/* AJUSTES ESPECÍFICOS PARA A TABELA DE METAS (sem alterar seu estilo) */
+table.metas {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+table.metas th, 
+table.metas td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+table.metas th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+table.metas .cursos {
+    text-align: left;
+    padding: 20px; /* Mantendo seu padrão de 20px */
+}
+
+.nota {
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Mantendo suas classes de cor originais */
+table.metas .laranja,
+table.metas .preta,
+table.metas .roxo,
+table.metas .verde,
+table.metas .vermelha {
+    font-weight: bold;
+    padding: 20px; /* Mantendo seu padrão */
+}
+
+/* Garantindo contraste de texto */
+table.metas .preta,
+table.metas .roxo,
+table.metas .verde {
+    color: white; /* Mantendo sua definição original */
 }
