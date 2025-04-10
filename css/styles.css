@@ -65,7 +65,6 @@ table tr td {
 }
 
 table {
-    /* esp. externo de 0 acima e abaixo e automático esq. dir. */
     margin: 0 auto; 
 }
 
@@ -75,6 +74,8 @@ table {
 .azul {
     background-color: blue;
     color: white;
+    text-align: center;
+
 }
 .preta {
     background-color: black;
