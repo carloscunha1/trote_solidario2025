@@ -20,6 +20,7 @@ O sistema é composto por:
     - Caixas de Leite
     - Kits de Alimentação
     - Latas de Suplemento
+    - Doações de Sangue
   - Exibe os resultados instantaneamente.
 - **Informações Detalhadas**: Cada página apresenta regras, formato, atividades e objetivos do evento.
 
